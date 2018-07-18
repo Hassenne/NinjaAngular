@@ -1,3 +1,10 @@
-<p>
-  pony works!
-</p>
+<h1>PonyRacer</h1>
+<h2>Welcome {{ user?.name }}</h2>
+<!--<div (click)="onButtonClick($event)"><button>Click me!</button></div>-->
+<!--<textarea (keydown.space)="onSpacePress()" cols="30" rows="10"></textarea>-->
+<input type="text" #name>
+<p>{{ name.value }}</p>
+<button (click)="name.focus()">Focus the input</button>
+
+<!--<p [textContent]="'welcome ' + user?.name"></p>-->
+<ns-races (newRaceAvailable) = "onNewRaces()"></ns-races>
